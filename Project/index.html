@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Resources/fazio.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="My_Opinion.html">My&nbsp;Opinion</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="About_me.html">Who&nbsp;Am&nbsp;I?</a>
+                    </div>
+
+                </div>
+
+                <div class="right-side">                    
+                    <div class="brand">
+                        <div>Vincent Fazio</div> 
+                    </div>
+                </div>  
+            </div> 
+
+                <div class="content-wrapper">
+                    <div class="content-items-wrapper">
+                        
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/alex_coding.jpg)" alt="Opened Mac on a wooden desk"></div>
+
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="https://www.cplusplus.com" target="_blank"><img src="Images/c-logo.png" alt="C++ logo"></a>
+                                </div>
+                                    
+                                <div class="subtitle">
+                                    C++ is a powerful general-purpose programming language. It can be used to develop operating systems, browsers, games, and so on.
+                                </div>
+
+                            </div>        
+                        </div>
+                        
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/Java_background3.jpg)" alt="Steaming ceramic cup of coffee"></div>
+                            
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="https://www.geeksforgeeks.org/java-programming-basics/" target="_blank"><img src="Images/Java-logo2.png" alt = "Java logo"></a>
+                                </div>
+                                    
+                                <div class="subtitle">
+                                    Java is used as the server-side language for most back-end development projects, including those involving big data and Android development..
+                                </div>
+
+                            </div>        
+                        </div>
+
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/python_background.jpg)" alt="A snake - A python"></div>
+
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="http://python.org" target="_blank"><img src="Images/python-logo2.png" alt="Python language logo"></a>
+                                </div>
+                                    
+                                <div class="subtitle">
+                                     Python also is often used as a support language for software developers, for build control and management, testing, and in many other ways.
+                                </div>
+
+                            </div>        
+                        </div>
+                        
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/haskell_background.jpg)" alt="Computer in terminal with code"></div>
+
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="https://www.haskell.org" target="_blank"><img src="Images/haskell-logo2.png" alt = "Haskell logo"></a>
+                                </div>
+                                    
+                                <div class="subtitle">
+                                    Haskell is used for business logic and data analysis, fast prototyping and enhancing existing software environments with correct code, performance and scalability.
+                                </div>
+
+                            </div>        
+                        </div>
+
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/go_background.jpg)" alt="Man in city walking"></div>
+
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="https://golang.org" target="_blank"><img src="Images/GO-logo.png" alt = "Go logo"></a>
+                                </div>
+                                    
+                                <div class="subtitle">
+                                    Go is used for programming across large-scale network servers and big distributed systems
+                                </div>
+
+                            </div>        
+                        </div>
+
+                        <div class="content-item-wrapper">
+                            <div class="content-img-background" style="background-image:url(Images/dart_background5.jpg)" alt="Dart Board"></div>
+
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href="https://dart.dev" target="_blank"><img src="Images/dart-logo.png" alt="Dart logo"></a> 
+                                </div>
+                                    
+                                <div class="subtitle">
+                                     Dart is a client-optimized programming language for apps on multiple platforms. It is developed by Google and is used to build mobile, desktop, server, and web applications.
+                                </div>
+
+                            </div>        
+                        </div>
+                    </div>   
+                </div> 
+                <footer>
+                    <div class="footer-wrapper">
+                        <p>&copy; Copyright 2021 Vincent Fazio</p>
+                    </div>
+                </footer>
+        </div>
+    </body>
+
+    <script>
+        const contentItems = document.querySelectorAll('.content-item-wrapper');
+
+        /*RUNS AND APPLIES ON MOUSE OVER AND RESETS WHEN MOUSE ISNT HOVERING- runs on page open*/
+        contentItems.forEach(contentItem => {
+            contentItem.addEventListener('mouseover', () => {
+                contentItem.childNodes[1].classList.add('darken-img'); 
+        }) 
+        
+        contentItem.addEventListener('mouseout', () => {
+                contentItem.childNodes[1].classList.remove('darken-img'); 
+        })
+    })
+    </script>
+
+</html>

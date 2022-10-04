@@ -1,0 +1,170 @@
+/*Start Body/master styles */
+body{
+    margin: 0px; /*Changing body size from 8px to 0px margin - for formating for images to be along the page*/
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /*Want the container to be a grid and then using fr fractional unit create a grid/column*/
+}
+/*End Body/master styles */
+
+/*Nav Bar css start*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+/*Going down the path(tree of divs) and applying everything from left-side div down this style */
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: .9em; /*(em)90% of its og size*/
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s; /*animating the border - half a second animation*/
+}
+
+.nav-link-wrapper a { /*Inside this wrapper grab the a link*/
+    color: #8a8a8a;
+    text-decoration: none;
+    transition:  color .5s;
+}
+
+.footer-wrapper {
+    font-size: .9em;
+    display: flex;
+    margin-top: 75px;
+    margin-left: 683px;
+}
+
+/*Hover states*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black; 
+}
+
+.nav-link-wrapper a:hover {
+    color: black; 
+}
+
+.active-nav-link {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+/* Nav Bar css end*/
+
+/*Profile Styles*/
+.content-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Each of the 2 columns, give them a full size column*/
+}
+
+.content-item-wrapper {
+    position: relative;
+}
+
+.content-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover; /*Croped images*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 30%;
+    margin-bottom: 20px;
+    /*margin-left: 90px;*/
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/*Starting text color is transparent*/
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+/*Only do this during hover state*/
+.img-text-wrapper:hover .subtitle {
+    color: white;
+    font-weight: 600;
+}
+
+/*Darkens the image when hovering over it (using java script will add and remove this class)*/
+.darken-img {
+    transition: 1s;
+    filter: brightness(8%); 
+}
+
+/*About Page styles
+.two-column-wrapper {
+}*/
+
+.profile-image-wrapper img {
+    width: 70%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: grey;
+}
+
+.contact-content-wrapper {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Got online.Adds a nice line when you <hr> in .html files */
+hr {
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
